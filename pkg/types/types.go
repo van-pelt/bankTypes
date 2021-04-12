@@ -11,14 +11,15 @@ type Category string
 type Money int
 type Status string
 type Card struct {
-	ID         int
-	PAN        string
-	Balance    Money
-	MinBalance Money
-	Currency   Currency
-	Color      string
-	Name       string
-	Active     bool
+	ID          int
+	PAN         string
+	Balance     Money
+	MinBalance  Money
+	Currency    Currency
+	Color       string
+	Name        string
+	Active      bool
+	MyInterface interface{}
 }
 
 type Payment struct {
