@@ -23,10 +23,11 @@ type Card struct {
 }
 
 type Payment struct {
-	ID       int
-	Amount   Money
-	Category Category
-	Status   Status
+	ID         int
+	Amount     Money
+	Category   Category
+	Status     Status
+	OtherField bool
 }
 
 type PaymentSource struct {
