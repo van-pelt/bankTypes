@@ -1,8 +1,15 @@
 package types
 
+const (
+	StatusOk        Status = "OK"
+	StatusFail      Status = "FAIL"
+	StatusInProgres Status = "INPROGRESS"
+)
+
 type Currency string
 type Category string
 type Money int
+type Status string
 type Card struct {
 	ID         int
 	PAN        string
@@ -15,9 +22,10 @@ type Card struct {
 }
 
 type Payment struct {
-	ID     int
-	Amount Money
+	ID       int
+	Amount   Money
 	Category Category
+	Status   Status
 }
 
 type PaymentSource struct {
