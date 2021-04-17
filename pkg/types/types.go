@@ -20,6 +20,7 @@ type Card struct {
 	Name        string
 	Active      bool
 	MyInterface interface{}
+	Status      string
 }
 
 type Payment struct {
